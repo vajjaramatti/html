@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #3333cc;
+        }
+        p {
+            color: #555555;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #33cc33;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #28a428;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is a simple HTML program with some styling and interactivity.</p>
+    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+    <br><br>
+    <button onclick="displayMessage()">Click Me!</button>
+
+    <p id="message"></p>
+
+    <script>
+        function displayMessage() {
+            document.getElementById("message").innerText = "Hello! You clicked the button!";
+        }
+    </script>
+</body>
+</html>
